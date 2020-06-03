@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  flask:
+    build: ./flask
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./flask:/usr/src/app
+      # - ./web:.
+  #   links:
+  #     - db
+  # db:
+  #   build: ./db
+  #   volumes:
+  #     - ./db/data:/data/db
